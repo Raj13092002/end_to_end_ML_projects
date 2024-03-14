@@ -1,9 +1,10 @@
-import sys
+
+import sys #import sys library
 
 
-class customexception(Exception):
+class customexception(Exception): #make the class of the custom exception
 
-    def __init__(self,error_message,error_details:sys):
+    def __init__(self,error_message,error_details:sys):# add the constructor that give the erooro massage and error details
         self.error_message=error_message
         _,_,exc_tb=error_details.exc_info()
         print(exc_tb)

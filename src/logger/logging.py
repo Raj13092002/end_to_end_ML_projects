@@ -1,8 +1,9 @@
 import logging
 import os
 from datetime import datetime
+#import all the library
 
-LOG_FILE=f"{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log"
+LOG_FILE=f"{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log" # in flog file we define the month dat year ect.
 
 log_path=os.path.join(os.getcwd(),"logs")
 
