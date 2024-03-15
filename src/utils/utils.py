@@ -10,11 +10,11 @@ from sklearn.metrics import r2_score, mean_absolute_error,mean_squared_error
 
 def save_object(file_path, obj):
     try:
-        dir_path = os.path.dirname(file_path)
+        dir_path = os.path.dirname(file_path) #to access the directory
 
-        os.makedirs(dir_path, exist_ok=True)
+        os.makedirs(dir_path, exist_ok=True) #make the directory
 
-        with open(file_path, "wb") as file_obj:
+        with open(file_path, "wb") as file_obj:  #open the file
             pickle.dump(obj, file_obj)
 
     except Exception as e:
@@ -45,7 +45,7 @@ def evaluate_model(X_train,y_train,X_test,y_test,models):
         logging.info('Exception occured during model training')
         raise customexception(e,sys)
     
-def load_object(file_path):
+def load_object(file_path): #load the object also
     try:
         with open(file_path,'rb') as file_obj:
             return pickle.load(file_obj)

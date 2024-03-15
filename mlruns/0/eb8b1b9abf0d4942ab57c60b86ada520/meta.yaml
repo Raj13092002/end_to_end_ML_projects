@@ -1,0 +1,15 @@
+artifact_uri: file:///config/workspace/mlruns/0/eb8b1b9abf0d4942ab57c60b86ada520/artifacts
+end_time: 1710512790220
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: eb8b1b9abf0d4942ab57c60b86ada520
+run_name: resilient-stoat-853
+run_uuid: eb8b1b9abf0d4942ab57c60b86ada520
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710512787042
+status: 3
+tags: []
+user_id: abc

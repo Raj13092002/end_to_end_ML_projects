@@ -1,12 +1,12 @@
-import pandas as pd
-import numpy as np
-from src.logger.logging import logging
-from src.exception.exception import customexception
+import pandas as pd #import pandas
+import numpy as np  #import numpy
+from src.logger.logging import logging  #import from local from src folder logger and in this logging class we import
+from src.exception.exception import customexception  #import from local src exception from them we import the classof the custom class
 
 
 import os
 import sys
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split #train and test split
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -23,8 +23,8 @@ class DataIngestion:
 
     def initiate_data_ingestion(self):
         logging.info("data ingestion started")
-        try:
-            data=pd.read_csv("https://raw.githubusercontent.com/sunnysavita10/fsdsmendtoend/main/notebooks/data/gemstone.csv")
+        try: # in try we have to add the main code for data ingestion
+            data=pd.read_csv("/config/workspace/datasets/cubic_zirconia.csv")
             logging.info(" reading a df")
 
             os.makedirs(os.path.dirname(os.path.join(self.ingestion_config.raw_data_path)),exist_ok=True)
